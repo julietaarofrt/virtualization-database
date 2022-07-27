@@ -12,7 +12,7 @@ app.get('/resources', async (req, res) => {
 })
 
 app.get('/student', async (req, res) => {
-  const student = await db.query('SELECT * FROM student')
+  const student = await db.query('SELECT * FROM students')
   console.log(student)
   return res.json(student)
 })
